@@ -50,8 +50,11 @@ export default function PageFlipBook() {
     const el = containerRef.current;
     if (!el) return;
     const update = () => {
+      const width = el.clientWidth;
+      const height = el.clientHeight;
+      if (width <= 0 || height <= 0) return;
       mountPageRef.current = currentIndexRef.current;
-      setSize({ width: el.clientWidth, height: el.clientHeight });
+      setSize({ width, height });
     };
     update();
     const observer = new ResizeObserver(update);
