@@ -53,14 +53,14 @@ export default function StoryPage({
       <div className="absolute inset-0 bg-black/10" />
       <div
         aria-hidden
-        className="absolute inset-y-0 w-[80%] sm:w-[62%] md:w-[55%]"
+        className="absolute inset-y-0 w-[85%] sm:w-[68%] md:w-[62%]"
         style={{
           left: data.align === "left" ? 0 : "auto",
           right: data.align === "right" ? 0 : "auto",
           background:
             data.align === "left"
-              ? "linear-gradient(to right, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0) 100%)"
-              : "linear-gradient(to left, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0.55) 45%, rgba(0,0,0,0) 100%)",
+              ? "linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0.45) 65%, rgba(0,0,0,0) 100%)"
+              : "linear-gradient(to left, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0.45) 65%, rgba(0,0,0,0) 100%)",
         }}
       />
       <div
@@ -96,6 +96,19 @@ export default function StoryPage({
           ))}
         </div>
       </div>
+      {data.closingMark && (
+        <div
+          className="pointer-events-none absolute bottom-[clamp(1.25rem,5vh,4rem)] left-[58%] z-10 -translate-x-1/2 whitespace-nowrap font-serif text-gold drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)]"
+          style={{
+            fontSize: "clamp(2.5rem, 5.5vw, 6.5rem)",
+            opacity: isActive ? 1 : 0,
+            transform: isActive ? "translateX(-50%) scale(1)" : "translate(-50%, 8%) scale(0.94)",
+            transition: "opacity 700ms ease-out 1200ms, transform 700ms ease-out 1200ms",
+          }}
+        >
+          {data.closingMark}
+        </div>
+      )}
     </div>
   );
 }

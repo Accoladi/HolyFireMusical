@@ -3,6 +3,7 @@ export type StoryPageData = {
   background: string;
   align: "left" | "right";
   paragraphs: string[];
+  closingMark?: string;
 };
 
 export const storyPages: StoryPageData[] = [
@@ -40,9 +41,21 @@ export const storyPages: StoryPageData[] = [
       "In dreams,\na child can wake you.",
       "A bridge can carry you\nsomewhere you have never been.",
       "A stage can change the world.",
-      "And a borrowed shoe\ncan create a miracle.",
+      "And borrowed shoes\ncan create a miracle.",
       "For one extraordinary week,\nthat is exactly what happens\nin Nashville.",
       "Not the Nashville on the map.\nThe one in our hearts.",
     ],
+  },
+  {
+    id: "page-4",
+    background: "/images/page4-bg.png",
+    align: "left",
+    paragraphs: [
+      "Everyone comes to Nashville\nbelieving they are about to win.\nNo one leaves the way they came.",
+      "Against the legendary glow\nof the Grand Ole Opry,\na Southern Governors Conference\nthat may shape the future of America,\nand the high-stakes pageantry\nof the massive Holy Fire convention,",
+      "love stirs, secrets deepen,\nmysteries unfold, and hearts are tested.",
+      "Blending romance, satire,\ngospel, country, and heart,\nthis original Broadway musical\nunfolds as one wildly entertaining\nAmerican fairytale . . .",
+    ],
+    closingMark: "HOLY FIRE!",
   },
 ];
