@@ -96,19 +96,6 @@ export default function StoryPage({
           ))}
         </div>
       </div>
-      {data.closingMark && (
-        <div
-          className="pointer-events-none absolute bottom-[clamp(1.25rem,5vh,4rem)] left-[58%] z-10 -translate-x-1/2 whitespace-nowrap font-serif text-gold drop-shadow-[0_3px_10px_rgba(0,0,0,0.9)]"
-          style={{
-            fontSize: "clamp(2.5rem, 5.5vw, 6.5rem)",
-            opacity: isActive ? 1 : 0,
-            transform: isActive ? "translateX(-50%) scale(1)" : "translate(-50%, 8%) scale(0.94)",
-            transition: "opacity 700ms ease-out 1200ms, transform 700ms ease-out 1200ms",
-          }}
-        >
-          {data.closingMark}
-        </div>
-      )}
     </div>
   );
 }
