@@ -10,6 +10,8 @@ const lookBookImage = (filename: string) =>
 
 const characterImage = (filename: string) => `/images/characters/${filename}`;
 
+const quinnPerezImage = (filename: string) => `/images/Quinn_Perez/${filename}`;
+
 export const storyPages: StoryPageData[] = [
   {
     id: "page-1",
@@ -143,49 +145,103 @@ export const storyPages: StoryPageData[] = [
   },
   {
     id: "page-14",
+    background: "/images/vendetta_page_2.png",
+    align: "right",
+    paragraphs: [
+      "People come to\nThe Pickle Jar\nfor my banana pudding.",
+      "It’s Great-Aunt\nMaddie Ruth’s recipe,\nserved from six\nuntil eleven.",
+      "My best friend Wyvette\nand her Governor husband\nbring everyone.",
+      "Last week—a parade:\neight Southern Governors.",
+      "Texas was a fool.",
+      "Florida?\nI’d marry him.",
+    ],
+  },
+  {
+    id: "page-15",
     background: characterImage("Wyvette_love.png"),
     align: "left",
     paragraphs: [],
   },
   {
-    id: "page-15",
+    id: "page-16",
     background: characterImage("Luther_Hennessee.png"),
     align: "left",
     paragraphs: [],
   },
   {
-    id: "page-16",
+    id: "page-17",
     background: characterImage("Tiffany_Dwan.png"),
     align: "left",
     paragraphs: [],
   },
   {
-    id: "page-17",
+    id: "page-18",
     background: characterImage("Jack_Reed.png"),
     align: "left",
     paragraphs: [],
   },
   {
-    id: "page-18",
+    id: "page-19",
     background: characterImage("Maggie_Love.png"),
     align: "left",
     paragraphs: [],
   },
   {
-    id: "page-19",
+    id: "page-20",
     background: characterImage("Jesse_David_Armistead.png"),
     align: "left",
     paragraphs: [],
   },
   {
-    id: "page-20",
+    id: "page-21",
     background: characterImage("Vendetta_Armistead.png"),
     align: "left",
     paragraphs: [],
   },
   {
-    id: "page-21",
+    id: "page-22",
     background: characterImage("Quinn_Perez.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-23",
+    background: quinnPerezImage("quinn_pereze_1.png"),
+    align: "left",
+    paragraphs: [
+      "I’m Quinn Perez,\nstanding in the lobby\nof Nashville’s legendary\nHermitage Hotel.",
+      "I’m the lead investigative reporter\nfor Counterpoint News\nin New York City.",
+      "I’ve won three Peabody Awards.",
+      "And when my Nashville exposé—\nHoly Fire: The Tell-All Special—\nairs tomorrow night,\nI expect it may earn me a fourth.",
+      "Perhaps even a Pulitzer Prize\nfor Investigative Reporting.",
+    ],
+  },
+  {
+    id: "page-24",
+    background: quinnPerezImage("quinn_pereze_2.png"),
+    align: "right",
+    paragraphs: [
+      "But this story is more than\nanother investigation.",
+      "For me, it’s personal.",
+      "It is fascinating, unsettling,\nand filled with secrets—",
+      "with a final revelation\neven I could never\nhave predicted.",
+    ],
+  },
+  {
+    id: "page-25",
+    background: quinnPerezImage("quinn_pereze_3.png"),
+    align: "left",
+    paragraphs: [
+      "I like you.\nAnd I trust you.",
+      "I’ve had a few too many\ncelebratory drinks,\nso I need to excuse myself\nto the Kennedy-Elvis-Hoffa\nMen’s Room.",
+      "While I’m gone,\nstep around the desk\nand read the opening\nto my Special.",
+      "But don’t share with CBS, NBC,\nCNN, or—heaven forbid—FOX.",
+      "Otherwise,\nwe can no longer be friends.",
+    ],
+  },
+  {
+    id: "page-26",
+    background: quinnPerezImage("quinn_pereze_4.png"),
     align: "left",
     paragraphs: [],
   },
