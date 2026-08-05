@@ -17,6 +17,15 @@ body {
   object-fit: contain;
 }
 
+.landing-video::-webkit-media-controls,
+.landing-video::-webkit-media-controls-enclosure,
+.landing-video::-webkit-media-controls-panel,
+.landing-video::-webkit-media-controls-start-playback-button,
+.landing-video::-webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none !important;
+}
+
 @media (orientation: landscape) {
   .landing-video {
     object-fit: cover;
