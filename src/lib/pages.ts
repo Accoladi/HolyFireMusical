@@ -8,6 +8,8 @@ export type StoryPageData = {
 const lookBookImage = (filename: string) =>
   `/images/Holy Fire Look-Book II/${filename}`;
 
+const characterImage = (filename: string) => `/images/characters/${filename}`;
+
 export const storyPages: StoryPageData[] = [
   {
     id: "page-1",
@@ -123,5 +125,68 @@ export const storyPages: StoryPageData[] = [
       "Not the Nashville\nmarked on a map—",
       "but the Nashville\nwe carry\nin our hearts.",
     ],
+  },
+  {
+    id: "page-13",
+    background: "/images/vendetta_page.png",
+    align: "right",
+    paragraphs: [
+      "I’m Vendetta—\nVendetta Armistead.",
+      "This diner is The Pickle Jar.",
+      "And, yes, I own it.",
+      "I’m also Chief Justice\nof the Tennessee Supreme Court,",
+      "with a psychology degree\nfrom the University of Tennessee.",
+      "So everyone who walks into\nthis old-fashioned meat-and-three\nbecomes a case study.",
+      "And believe me—\nthey’re characters.",
+      "It’s about time you met them.",
+    ],
+  },
+  {
+    id: "page-14",
+    background: characterImage("Wyvette_love.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-15",
+    background: characterImage("Luther_Hennessee.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-16",
+    background: characterImage("Tiffany_Dwan.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-17",
+    background: characterImage("Jack_Reed.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-18",
+    background: characterImage("Maggie_Love.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-19",
+    background: characterImage("Jesse_David_Armistead.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-20",
+    background: characterImage("Vendetta_Armistead.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-21",
+    background: characterImage("Quinn_Perez.png"),
+    align: "left",
+    paragraphs: [],
   },
 ];

@@ -51,51 +51,55 @@ export default function StoryPage({
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-black/10" />
-      <div
-        aria-hidden
-        className="absolute inset-y-0 w-[85%] sm:w-[68%] md:w-[62%]"
-        style={{
-          left: data.align === "left" ? 0 : "auto",
-          right: data.align === "right" ? 0 : "auto",
-          background:
-            data.align === "left"
-              ? "linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0.45) 65%, rgba(0,0,0,0) 100%)"
-              : "linear-gradient(to left, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0.45) 65%, rgba(0,0,0,0) 100%)",
-        }}
-      />
-      <div
-        ref={wrapperRef}
-        className={`absolute inset-0 flex items-center overflow-y-auto px-5 py-8 sm:px-14 sm:py-10 md:px-20 ${
-          data.align === "left" ? "justify-start" : "justify-end"
-        }`}
-      >
-        <div
-          ref={blockRef}
-          className={`flex max-w-3xl flex-col ${
-            data.align === "right" ? "text-right" : "text-left"
-          }`}
-          style={{
-            gap: `clamp(6px, ${isLong ? 1.8 : 2.6}vh, 28px)`,
-            transform: `scale(${scale})`,
-            transformOrigin: "center",
-          }}
-        >
-          {data.paragraphs.map((paragraph, i) => (
-            <p
-              key={i}
-              className="whitespace-pre-line font-serif text-gold leading-[1.16] drop-shadow-[0_2px_6px_rgba(0,0,0,0.85)] transition-all duration-700 ease-out"
+      {data.paragraphs.length > 0 && (
+        <>
+          <div
+            aria-hidden
+            className="absolute inset-y-0 w-[85%] sm:w-[68%] md:w-[62%]"
+            style={{
+              left: data.align === "left" ? 0 : "auto",
+              right: data.align === "right" ? 0 : "auto",
+              background:
+                data.align === "left"
+                  ? "linear-gradient(to right, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0.45) 65%, rgba(0,0,0,0) 100%)"
+                  : "linear-gradient(to left, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.8) 40%, rgba(0,0,0,0.45) 65%, rgba(0,0,0,0) 100%)",
+            }}
+          />
+          <div
+            ref={wrapperRef}
+            className={`absolute inset-0 flex items-center overflow-y-auto px-5 py-8 sm:px-14 sm:py-10 md:px-20 ${
+              data.align === "left" ? "justify-start" : "justify-end"
+            }`}
+          >
+            <div
+              ref={blockRef}
+              className={`flex max-w-3xl flex-col ${
+                data.align === "right" ? "text-right" : "text-left"
+              }`}
               style={{
-                fontSize: `clamp(1rem, ${isLong ? 4.1 : 5.2}vh, 3rem)`,
-                opacity: isActive ? 1 : 0,
-                transform: isActive ? "translateY(0)" : "translateY(16px)",
-                transitionDelay: isActive ? `${300 + i * 220}ms` : "0ms",
+                gap: `clamp(6px, ${isLong ? 1.8 : 2.6}vh, 28px)`,
+                transform: `scale(${scale})`,
+                transformOrigin: "center",
               }}
             >
-              {paragraph}
-            </p>
-          ))}
-        </div>
-      </div>
+              {data.paragraphs.map((paragraph, i) => (
+                <p
+                  key={i}
+                  className="whitespace-pre-line font-serif text-gold leading-[1.16] drop-shadow-[0_2px_6px_rgba(0,0,0,0.85)] transition-all duration-700 ease-out"
+                  style={{
+                    fontSize: `clamp(1rem, ${isLong ? 4.1 : 5.2}vh, 3rem)`,
+                    opacity: isActive ? 1 : 0,
+                    transform: isActive ? "translateY(0)" : "translateY(16px)",
+                    transitionDelay: isActive ? `${300 + i * 220}ms` : "0ms",
+                  }}
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
