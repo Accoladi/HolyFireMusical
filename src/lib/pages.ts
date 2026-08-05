@@ -12,7 +12,7 @@ export const storyPages: StoryPageData[] = [
   {
     id: "page-1",
     background: lookBookImage(
-      "Page One - Nashville Street Scene - Lower Broadway.png"
+      "Page One - Nashville Street Scene - Lower Broadway.png",
     ),
     align: "left",
     paragraphs: [
@@ -65,7 +65,9 @@ export const storyPages: StoryPageData[] = [
     background: lookBookImage("Page Six - Football throw at Capital.png"),
     align: "left",
     paragraphs: [
-      "In this Nashville,\ncountry queens and beauty queens,\nkingmakers and politicians,\npreachers and reporters,\nmothers and daughters,\nfriends and enemies",
+      "In this Nashville,",
+      "country queens and politicians,\nbeauty queens, preachers,\nand reporters—",
+      "mothers and daughters,\nfriends and enemies—",
       "cross paths\nand wander together\nthrough the same\nAmerican fairytale.",
     ],
   },
@@ -92,9 +94,7 @@ export const storyPages: StoryPageData[] = [
   },
   {
     id: "page-9",
-    background: lookBookImage(
-      "Page Nine - Holy Fire Convention on Stage.png"
-    ),
+    background: lookBookImage("Page Nine - Holy Fire Convention on Stage.png"),
     align: "left",
     paragraphs: [
       "A stage can change the world.",
@@ -103,9 +103,7 @@ export const storyPages: StoryPageData[] = [
   },
   {
     id: "page-10",
-    background: lookBookImage(
-      "Page Ten - Holy Fire Convention at Stadium.png"
-    ),
+    background: lookBookImage("Page Ten - Holy Fire Convention at Stadium.png"),
     align: "left",
     paragraphs: [
       "For one extraordinary week,\nthe Nashville of imagination\nbecomes real.",
