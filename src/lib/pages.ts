@@ -147,6 +147,54 @@ export const storyPages: StoryPageData[] = [
   },
   {
     id: "page-14",
+    background: characterImage("Wyvette_love.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-15",
+    background: characterImage("Luther_Hennessee.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-16",
+    background: characterImage("Tiffany_Dwan.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-17",
+    background: characterImage("Jack_Reed.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-18",
+    background: characterImage("Maggie_Love.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-19",
+    background: characterImage("Jesse_David_Armistead.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-20",
+    background: characterImage("Vendetta_Armistead.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-21",
+    background: characterImage("Quinn_Perez.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-22",
     background: "/images/vendetta_page_2.png",
     align: "right",
     paragraphs: [
@@ -159,91 +207,55 @@ export const storyPages: StoryPageData[] = [
     ],
   },
   {
-    id: "page-15",
+    id: "page-23",
     background: governorImage("Ashley_manning_kelet.png"),
     align: "left",
     paragraphs: [],
   },
   {
-    id: "page-16",
+    id: "page-24",
     background: governorImage("Benicio_falcon_castillo.png"),
     align: "left",
     paragraphs: [],
   },
   {
-    id: "page-17",
+    id: "page-25",
     background: governorImage("Daramri_farrell_clayton.png"),
     align: "left",
     paragraphs: [],
   },
   {
-    id: "page-18",
+    id: "page-26",
     background: governorImage("Jared_Forsyth_mcphearson.png"),
     align: "left",
     paragraphs: [],
   },
   {
-    id: "page-19",
-    background: governorImage("Rohith_Karan_Kumar.png"),
-    align: "left",
-    paragraphs: [],
-  },
-  {
-    id: "page-20",
-    background: governorImage("Troy_Luckenbach_mcalister.png"),
-    align: "left",
-    paragraphs: [],
-  },
-  {
-    id: "page-21",
-    background: characterImage("Wyvette_love.png"),
-    align: "left",
-    paragraphs: [],
-  },
-  {
-    id: "page-22",
-    background: characterImage("Luther_Hennessee.png"),
-    align: "left",
-    paragraphs: [],
-  },
-  {
-    id: "page-23",
-    background: characterImage("Tiffany_Dwan.png"),
-    align: "left",
-    paragraphs: [],
-  },
-  {
-    id: "page-24",
-    background: characterImage("Jack_Reed.png"),
-    align: "left",
-    paragraphs: [],
-  },
-  {
-    id: "page-25",
-    background: characterImage("Maggie_Love.png"),
-    align: "left",
-    paragraphs: [],
-  },
-  {
-    id: "page-26",
-    background: characterImage("Jesse_David_Armistead.png"),
-    align: "left",
-    paragraphs: [],
-  },
-  {
     id: "page-27",
-    background: characterImage("Vendetta_Armistead.png"),
+    background: governorImage("Jasper_Maywood_airhart.png"),
     align: "left",
     paragraphs: [],
   },
   {
     id: "page-28",
-    background: characterImage("Quinn_Perez.png"),
+    background: governorImage("Rohith_Karan_Kumar.png"),
     align: "left",
     paragraphs: [],
   },
   {
     id: "page-29",
+    background: governorImage("Trevor_tyler_tipton.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-30",
+    background: governorImage("Troy_Luckenbach_mcalister.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-31",
     background: quinnPerezImage("quinn_pereze_1.png"),
     align: "left",
     paragraphs: [
@@ -255,7 +267,7 @@ export const storyPages: StoryPageData[] = [
     ],
   },
   {
-    id: "page-30",
+    id: "page-32",
     background: quinnPerezImage("quinn_pereze_2.png"),
     align: "right",
     paragraphs: [
@@ -266,7 +278,7 @@ export const storyPages: StoryPageData[] = [
     ],
   },
   {
-    id: "page-31",
+    id: "page-33",
     background: quinnPerezImage("quinn_pereze_3.png"),
     align: "left",
     paragraphs: [
@@ -278,7 +290,7 @@ export const storyPages: StoryPageData[] = [
     ],
   },
   {
-    id: "page-32",
+    id: "page-34",
     background: quinnPerezImage("quinn_pereze_4.png"),
     align: "left",
     paragraphs: [],
