@@ -12,6 +12,8 @@ const characterImage = (filename: string) => `/images/characters/${filename}`;
 
 const quinnPerezImage = (filename: string) => `/images/Quinn_Perez/${filename}`;
 
+const governorImage = (filename: string) => `/images/governors/${filename}`;
+
 export const storyPages: StoryPageData[] = [
   {
     id: "page-1",
@@ -158,54 +160,90 @@ export const storyPages: StoryPageData[] = [
   },
   {
     id: "page-15",
-    background: characterImage("Wyvette_love.png"),
+    background: governorImage("Ashley_manning_kelet.png"),
     align: "left",
     paragraphs: [],
   },
   {
     id: "page-16",
-    background: characterImage("Luther_Hennessee.png"),
+    background: governorImage("Benicio_falcon_castillo.png"),
     align: "left",
     paragraphs: [],
   },
   {
     id: "page-17",
-    background: characterImage("Tiffany_Dwan.png"),
+    background: governorImage("Daramri_farrell_clayton.png"),
     align: "left",
     paragraphs: [],
   },
   {
     id: "page-18",
-    background: characterImage("Jack_Reed.png"),
+    background: governorImage("Jared_Forsyth_mcphearson.png"),
     align: "left",
     paragraphs: [],
   },
   {
     id: "page-19",
-    background: characterImage("Maggie_Love.png"),
+    background: governorImage("Rohith_Karan_Kumar.png"),
     align: "left",
     paragraphs: [],
   },
   {
     id: "page-20",
-    background: characterImage("Jesse_David_Armistead.png"),
+    background: governorImage("Troy_Luckenbach_mcalister.png"),
     align: "left",
     paragraphs: [],
   },
   {
     id: "page-21",
-    background: characterImage("Vendetta_Armistead.png"),
+    background: characterImage("Wyvette_love.png"),
     align: "left",
     paragraphs: [],
   },
   {
     id: "page-22",
-    background: characterImage("Quinn_Perez.png"),
+    background: characterImage("Luther_Hennessee.png"),
     align: "left",
     paragraphs: [],
   },
   {
     id: "page-23",
+    background: characterImage("Tiffany_Dwan.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-24",
+    background: characterImage("Jack_Reed.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-25",
+    background: characterImage("Maggie_Love.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-26",
+    background: characterImage("Jesse_David_Armistead.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-27",
+    background: characterImage("Vendetta_Armistead.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-28",
+    background: characterImage("Quinn_Perez.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-29",
     background: quinnPerezImage("quinn_pereze_1.png"),
     align: "left",
     paragraphs: [
@@ -217,7 +255,7 @@ export const storyPages: StoryPageData[] = [
     ],
   },
   {
-    id: "page-24",
+    id: "page-30",
     background: quinnPerezImage("quinn_pereze_2.png"),
     align: "right",
     paragraphs: [
@@ -228,7 +266,7 @@ export const storyPages: StoryPageData[] = [
     ],
   },
   {
-    id: "page-25",
+    id: "page-31",
     background: quinnPerezImage("quinn_pereze_3.png"),
     align: "left",
     paragraphs: [
@@ -240,7 +278,7 @@ export const storyPages: StoryPageData[] = [
     ],
   },
   {
-    id: "page-26",
+    id: "page-32",
     background: quinnPerezImage("quinn_pereze_4.png"),
     align: "left",
     paragraphs: [],
