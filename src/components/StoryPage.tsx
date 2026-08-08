@@ -16,7 +16,7 @@ export default function StoryPage({
     (acc, p) => acc + p.split("\n").length,
     0
   );
-  const isLong = totalLines > 12;
+  const isLong = totalLines > 16;
 
   const wrapperRef = useRef<HTMLDivElement>(null);
   const blockRef = useRef<HTMLDivElement>(null);
@@ -77,7 +77,7 @@ export default function StoryPage({
                 data.align === "right" ? "text-right" : "text-left"
               }`}
               style={{
-                gap: `clamp(6px, ${isLong ? 1.8 : 2.6}vh, 28px)`,
+                gap: `clamp(4px, ${isLong ? 1.5 : 2.2}vh, 24px)`,
                 transform: `scale(${scale})`,
                 transformOrigin: "center",
               }}

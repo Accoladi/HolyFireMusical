@@ -14,6 +14,8 @@ const quinnPerezImage = (filename: string) => `/images/Quinn_Perez/${filename}`;
 
 const governorImage = (filename: string) => `/images/governors/${filename}`;
 
+const synopsisImage = (filename: string) => `/images/synopsis/${filename}`;
+
 export const storyPages: StoryPageData[] = [
   {
     id: "page-1",
@@ -292,6 +294,104 @@ export const storyPages: StoryPageData[] = [
   {
     id: "page-34",
     background: quinnPerezImage("quinn_pereze_4.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-35",
+    background: "/images/David_campbell.png",
+    align: "right",
+    paragraphs: [
+      "I’m David Campbell,\nand I live in Nashville.",
+      "I grew up\nacross the river\nin Arkansas,",
+      "but spent much\nof my life\nin New York City.",
+      "There, I assisted\nthe producer of Sugar Babies.",
+      "The producer died\nand I became the producer.",
+      "Oh, I’m older now\nthan I was in this New York picture.",
+      "I just like remembering\nthe days when I had hair.",
+    ],
+  },
+  {
+    id: "page-36",
+    background: "/images/David_Campbell-2.png",
+    align: "left",
+    paragraphs: [
+      "Then came television.",
+      "I produced\nComedy Central\nfor HBO.",
+      "A friend’s drawings\nbecame Doug.",
+      "Nickelodeon aired it.\nDisney bought it.",
+      "They gave me\nan impressive title.",
+      "The title lasted.",
+      "I didn’t.",
+    ],
+  },
+  {
+    id: "page-37",
+    background: "/images/David_campbell-3.png",
+    align: "right",
+    paragraphs: [
+      "Then I moved\nto Nashville—",
+      "my wife’s hometown.",
+      "That’s where I discovered\nHoly Fire!",
+      "The musical\nwas already underway—",
+      "but it needed help.",
+      "I needed a project.",
+      "So here we are,\nseveral years later.",
+    ],
+  },
+  {
+    id: "page-38",
+    background: "/images/pamela_and_randall.png",
+    align: "left",
+    paragraphs: [
+      "Pamela Wilkes\nand Randall Bayne",
+      "dreamed up Holy Fire!\nand everyone in it.",
+      "To them, these characters\nare as real as the people\nthey’ll swear they’re not based on.",
+      "Somehow, they’ve become\nreal to me, too.",
+      "Soon you’ll be saying—",
+      "“He’s exactly like ______.”\nOr, “Did she really say that?”",
+    ],
+  },
+  {
+    id: "page-39",
+    background: "/images/Greg_simmions.png",
+    align: "right",
+    paragraphs: [
+      "A musical\nisn’t a musical\nwithout music.",
+      "And Nashville\ncertainly knows music.",
+      "Holy Fire! found songwriters\nfrom South Carolina\nto New York, California,\nNashville—even Alaska.",
+      "But Greg Sims—\nsongwriter, composer, orchestrator—\nbrought it all together.",
+    ],
+  },
+  {
+    id: "page-40",
+    background: "/images/david_campbell-4.png",
+    align: "right",
+    paragraphs: [
+      "Now, a little more\nabout Holy Fire!",
+      "It’s everything the South\ntaught us not to discuss—",
+      "sex, politics,\nand religion.",
+      "At its heart is\nAmerica’s most admired family,",
+      "ready for their next big move—",
+      "until one extraordinary week\nchanges everything.",
+      "Turn the page.\nIt’s a page-turner.",
+    ],
+  },
+  {
+    id: "page-41",
+    background: synopsisImage("synopsis-1.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-42",
+    background: synopsisImage("synopsis-2.png"),
+    align: "left",
+    paragraphs: [],
+  },
+  {
+    id: "page-43",
+    background: synopsisImage("synopsis-3.png"),
     align: "left",
     paragraphs: [],
   },
